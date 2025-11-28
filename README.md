@@ -84,22 +84,25 @@ DELETE FROM users  -- Delete all rows (requires confirmation)
 EXIT  -- Exit the application
 HELP  -- Show help message
 
-### Project Structure
+## Project Structure
 
-database_engine/
-├── database_engine/          # Main package
-│   ├── __init__.py          # Package initialization
-│   ├── main.py              # CLI interface and user interaction
-│   ├── engine.py            # Database session management
-│   ├── core.py              # Core database operations
-│   ├── parser.py            # SQL command parsing
-│   ├── utils.py             # File operations and validation
-│   ├── decorators.py        # Custom decorators
-│   └── constants.py         # Constants and configuration
-├── README.md                # This file
-├── pyproject.toml           # Project dependencies and configuration
-├── Makefile                 # Development commands
-└── .gitignore              # Git ignore rules
+### Core Modules
+
+- **`database_engine/main.py`** - CLI interface with command history and pretty output
+- **`database_engine/engine.py`** - Database session management and command execution
+- **`database_engine/core.py`** - Core database operations (CRUD, table management)
+- **`database_engine/parser.py`** - SQL-like command parsing and condition evaluation
+- **`database_engine/utils.py`** - File operations, data validation, and caching
+- **`database_engine/decorators.py`** - Custom decorators for error handling and timing
+- **`database_engine/constants.py`** - Configuration constants and messages
+
+### Project Files
+
+- **`pyproject.toml`** - Poetry configuration and dependencies
+- **`Makefile`** - Development workflow commands
+- **`.gitignore`** - Git exclusion rules
+- **`README.md`** - Project documentation
+
 
 ### Code Quality
 
