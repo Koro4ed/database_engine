@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "database-engine"
+version = "0.1.0"
+description = "A simple file-based database engine with SQL-like syntax"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+prompt-toolkit = "^3.0.0"
+prettytable = "^3.0.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.0"
+black = "^23.0.0"
+
+[tool.poetry.scripts]
+project = "database_engine.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
