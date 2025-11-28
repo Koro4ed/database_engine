@@ -34,7 +34,7 @@ A simple file-based database engine with SQL-like syntax implemented in Python. 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/database_engine.git
+   git clone https://github.com/Koro4ed/database_engine.git
    cd database_engine
 2. **make install**:
     This command will:
