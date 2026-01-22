@@ -1,3 +1,7 @@
+#Pavlov Arseniy
+#Вариант 13-14
+#Таблицы коллекции и экспонаты без связей с другими таблицами.
+
 from prompt_toolkit import prompt
 from prompt_toolkit.history import FileHistory
 from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
